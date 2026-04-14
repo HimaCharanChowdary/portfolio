@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jasthi Hima Charan Chowdary — AI & Robotics Engineer, NLP specialist, LLM researcher, and Salesforce developer at VIT University (2026)." />
+    <meta property="og:title" content="Jasthi Hima Charan Chowdary | Portfolio" />
+    <meta property="og:description" content="AI & Robotics undergraduate at VIT with expertise in NLP, LLMs, RAG pipelines and Salesforce development." />
+    <title>Jasthi Hima Charan Chowdary | AI & Robotics Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Particle Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Background blobs -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- HEADER -->
+    <header class="glass-header" id="header">
+      <nav class="navbar">
+        <a href="#hero" class="logo">
+          <span class="logo-bracket">&lt;</span>JHCC<span class="logo-bracket">/&gt;</span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="mailto:himacharan.cc@gmail.com" class="btn btn-nav">Hire Me</a></li>
+        </ul>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===== HERO ===== -->
+      <section id="hero" class="hero">
+        <div class="container hero-content">
+          <p class="hero-greeting">Hello, World! I'm</p>
+          <h1 class="hero-title">
+            <span>Jasthi Hima</span>
+            <span class="hero-name-accent">Charan Chowdary</span>
+          </h1>
+          <div class="hero-roles">
+            <span class="role-static">I build </span>
+            <span class="role-dynamic" id="role-dynamic"></span>
+          </div>
+          <p class="hero-bio">
+            Computer Science undergraduate (2026) at <strong>VIT University</strong> specialising in <strong>AI & Robotics</strong>.
+            Passionate about NLP, LLMs, RAG pipelines, agentic AI systems, and scalable ML deployments.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V15h-2v1.93A8 8 0 0 1 4.07 11H6V9H4.07A8 8 0 0 1 11 4.07V6h2V4.07A8 8 0 0 1 19.93 11H18v2h1.93A8 8 0 0 1 13 16.93z"/></svg>
+              View Projects
+            </a>
+            <a href="https://www.linkedin.com/in/hima-charan-chowdary" target="_blank" rel="noopener" class="btn btn-outline">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/HimaCharanChowdary" target="_blank" rel="noopener" class="btn btn-outline">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num" data-target="3">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="2">0</span>
+              <span class="stat-label">Internships</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="3">0</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="97">0</span>
+              <span class="stat-label">Best F1 Score %</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-scroll-hint">
+          <span>Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- ===== ABOUT ===== -->
+      <section id="about" class="section reveal">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-tag">01 / About</p>
+            <h2 class="section-title">Who Am I?</h2>
+          </div>
+          <div class="about-layout">
+            <div class="about-text glass-card">
+              <p>
+                I'm a <strong>Computer Science undergraduate</strong> (graduating 2026) at <strong>Vellore Institute of Technology, Chennai</strong> with a specialisation in AI & Robotics. My work sits at the intersection of <em>intelligent systems</em> and <em>real-world deployment</em> — from fine-tuning large language models to building post-quantum blockchain pipelines.
+              </p>
+              <p>
+                I have a systems-oriented mindset backed by strong fundamentals in data structures, operating systems, and computer architecture. I'm experienced building RESTful microservices atop FastAPI and Flask, automating processes in Salesforce, and shipping Edge AI to embedded hardware.
+              </p>
+              <p>
+                When I'm not coding, I lead as <strong>Vice-President & Photography Lead</strong> of VIT's AVR Club (AR/VR) — managing a team of 90+ members.
+              </p>
+              <div class="about-links">
+                <a href="mailto:himacharan.cc@gmail.com" class="about-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                  himacharan.cc@gmail.com
+                </a>
+                <a href="https://leetcode.com/himacharancc" target="_blank" rel="noopener" class="about-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.823-.662l-4.344-4.141c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.344-4.141c.466-.467 1.111-.662 1.823-.662s1.357.195 1.823.662l2.697 2.607c.467.467 1.17.467 1.636 0 .467-.467.467-1.17 0-1.636l-2.697-2.607c-.944-.944-2.138-1.465-3.459-1.465s-2.515.521-3.459 1.465L4.634 12c-.944.944-1.465 2.138-1.465 3.459s.521 2.515 1.465 3.459l4.344 4.141c.944.944 2.138 1.465 3.459 1.465s2.515-.521 3.459-1.465l2.697-2.607c.467-.467.467-1.17 0-1.636-.466-.467-1.169-.467-1.491.114z"/></svg>
+                  leetcode / himacharancc
+                </a>
+                <a href="https://www.linkedin.com/in/hima-charan-chowdary" target="_blank" rel="noopener" class="about-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                  LinkedIn Profile
+                </a>
+              </div>
+            </div>
+            <div class="about-quick-info">
+              <div class="info-card glass-card">
+                <div class="info-icon">🎓</div>
+                <div>
+                  <p class="info-label">University</p>
+                  <p class="info-value">VIT Chennai</p>
+                </div>
+              </div>
+              <div class="info-card glass-card">
+                <div class="info-icon">🤖</div>
+                <div>
+                  <p class="info-label">Specialisation</p>
+                  <p class="info-value">AI & Robotics</p>
+                </div>
+              </div>
+              <div class="info-card glass-card">
+                <div class="info-icon">📅</div>
+                <div>
+                  <p class="info-label">Graduating</p>
+                  <p class="info-value">2026</p>
+                </div>
+              </div>
+              <div class="info-card glass-card">
+                <div class="info-icon">📍</div>
+                <div>
+                  <p class="info-label">Location</p>
+                  <p class="info-value">Chennai, India</p>
+                </div>
+              </div>
+              <div class="info-card glass-card">
+                <div class="info-icon">💼</div>
+                <div>
+                  <p class="info-label">Status</p>
+                  <p class="info-value" style="color: #4ade80;">Open to Opportunities</p>
+                </div>
+              </div>
+              <div class="info-card glass-card">
+                <div class="info-icon">⭐</div>
+                <div>
+                  <p class="info-label">CGPA</p>
+                  <p class="info-value">7.57 / 10</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SKILLS ===== -->
+      <section id="skills" class="section reveal">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-tag">02 / Skills</p>
+            <h2 class="section-title">Technical Arsenal</h2>
+          </div>
+          <div class="skills-grid">
+            <div class="glass-card skill-card">
+              <div class="skill-icon">🧠</div>
+              <h3>NLP / ML & AI Agents</h3>
+              <div class="tags">
+                <span class="tag">BERT / Transformers</span>
+                <span class="tag">HuggingFace</span>
+                <span class="tag">LangChain</span>
+                <span class="tag">LlamaIndex</span>
+                <span class="tag">RAG Pipelines</span>
+                <span class="tag">Fine-tuning</span>
+                <span class="tag">Agentic Pipelines</span>
+                <span class="tag">Tool Calling</span>
+                <span class="tag">Prompt Engineering</span>
+                <span class="tag">Semantic Search</span>
+                <span class="tag">NER</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">PyTorch</span>
+              </div>
+            </div>
+            <div class="glass-card skill-card">
+              <div class="skill-icon">☁️</div>
+              <h3>Cloud & DevOps</h3>
+              <div class="tags">
+                <span class="tag">AWS SageMaker</span>
+                <span class="tag">S3 / Lambda</span>
+                <span class="tag">EC2 / IAM</span>
+                <span class="tag">CloudWatch</span>
+                <span class="tag">API Gateway</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Kubernetes</span>
+                <span class="tag">CI/CD</span>
+                <span class="tag">Git / GitHub</span>
+                <span class="tag">Linux</span>
+              </div>
+            </div>
+            <div class="glass-card skill-card">
+              <div class="skill-icon">⚙️</div>
+              <h3>Backend & Systems</h3>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Java</span>
+                <span class="tag">C++</span>
+                <span class="tag">SQL</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Flask</span>
+                <span class="tag">Microservices</span>
+                <span class="tag">Distributed Systems</span>
+                <span class="tag">OOP / DSA</span>
+                <span class="tag">OS / Architecture</span>
+              </div>
+            </div>
+            <div class="glass-card skill-card">
+              <div class="skill-icon">🗃️</div>
+              <h3>Databases</h3>
+              <div class="tags">
+                <span class="tag">MySQL</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">FAISS</span>
+                <span class="tag">ChromaDB</span>
+                <span class="tag">Vector Search</span>
+                <span class="tag">Query Optimisation</span>
+              </div>
+            </div>
+            <div class="glass-card skill-card">
+              <div class="skill-icon">🤖</div>
+              <h3>Robotics & Simulation</h3>
+              <div class="tags">
+                <span class="tag">ROS</span>
+                <span class="tag">Gazebo</span>
+                <span class="tag">RViz</span>
+                <span class="tag">Sensor Integration</span>
+                <span class="tag">Drone Systems</span>
+                <span class="tag">RPA / UiPath</span>
+                <span class="tag">Google Colab</span>
+              </div>
+            </div>
+            <div class="glass-card skill-card">
+              <div class="skill-icon">☁</div>
+              <h3>Salesforce Ecosystem</h3>
+              <div class="tags">
+                <span class="tag">Agentforce</span>
+                <span class="tag">Einstein AI</span>
+                <span class="tag">Apex & Triggers</span>
+                <span class="tag">SOQL / SOSL</span>
+                <span class="tag">Flow Automation</span>
+                <span class="tag">Data Loader</span>
+                <span class="tag">Lightning Pages</span>
+                <span class="tag">Async Apex</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== EXPERIENCE ===== -->
+      <section id="experience" class="section reveal">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-tag">03 / Experience</p>
+            <h2 class="section-title">Work History</h2>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item reveal-child">
+              <div class="timeline-marker">
+                <div class="timeline-dot"></div>
+                <div class="timeline-line"></div>
+              </div>
+              <div class="glass-card timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <h3>SFDC Intern</h3>
+                    <h4 class="company">CloudOdyssey</h4>
+                  </div>
+                  <span class="timeline-date">May 2025 – Jul 2025</span>
+                </div>
+                <ul class="duties">
+                  <li>Developed custom backend logic using <strong>Apex Classes and Triggers</strong> for bulk data processing, reducing manual effort by <strong>40%</strong>.</li>
+                  <li>Optimised <strong>SOQL/SOSL queries</strong> for Salesforce Governor Limit compliance, improving large dataset retrieval performance.</li>
+                  <li>Built <strong>RESTful API integrations</strong> between Salesforce and third-party systems with idempotency and fault-handling mechanisms.</li>
+                  <li>Participated in sprint planning, code reviews, and explored <strong>Agentforce automation</strong> workflows.</li>
+                </ul>
+                <div class="timeline-tags">
+                  <span class="tag-small">Apex</span>
+                  <span class="tag-small">SOQL</span>
+                  <span class="tag-small">REST API</span>
+                  <span class="tag-small">Agentforce</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item reveal-child">
+              <div class="timeline-marker">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="glass-card timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <h3>SFDC Intern</h3>
+                    <h4 class="company">CloudOdyssey</h4>
+                  </div>
+                  <span class="timeline-date">Jun 2024 – Jul 2024</span>
+                </div>
+                <ul class="duties">
+                  <li>Implemented <strong>15+ automations</strong> using Salesforce Flow and Approval Processes, streamlining case handling workflows.</li>
+                  <li>Designed <strong>25+ data model scenarios</strong> using custom objects, validation rules, relationships, and record types.</li>
+                  <li>Improved data visibility by developing customised <strong>Lightning Record Pages, Reports, and Dashboards</strong>.</li>
+                </ul>
+                <div class="timeline-tags">
+                  <span class="tag-small">Flow Automation</span>
+                  <span class="tag-small">Lightning</span>
+                  <span class="tag-small">Dashboards</span>
+                  <span class="tag-small">Data Modelling</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PROJECTS ===== -->
+      <section id="projects" class="section reveal">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-tag">04 / Projects</p>
+            <h2 class="section-title">Featured Work</h2>
+          </div>
+          <div class="projects-grid">
+
+            <div class="project-card glass-card reveal-child">
+              <div class="project-header">
+                <div class="project-icon-wrap">🔐</div>
+                <div class="project-links">
+                  <a href="https://github.com/HimaCharanChowdary/secure-scm-pqc-blockchain" target="_blank" rel="noopener" aria-label="View on GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3>Secure Supply Chain Management</h3>
+              <p class="project-desc">Post-quantum blockchain framework combining AST-based ML smart contract auditing with CRYSTALS-Dilithium2 signatures.</p>
+              <div class="project-metrics">
+                <div class="metric"><span class="metric-val">97.0%</span><span class="metric-label">F1 Score</span></div>
+                <div class="metric"><span class="metric-val">8K+</span><span class="metric-label">Contracts Audited</span></div>
+                <div class="metric"><span class="metric-val">4</span><span class="metric-label">ML Models</span></div>
+              </div>
+              <div class="project-stack">
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">Solidity</span>
+                <span class="stack-tag">Ethereum</span>
+                <span class="stack-tag">Dilithium2</span>
+                <span class="stack-tag">SVM</span>
+                <span class="stack-tag">Random Forest</span>
+              </div>
+            </div>
+
+            <div class="project-card glass-card reveal-child">
+              <div class="project-header">
+                <div class="project-icon-wrap">🕵️</div>
+                <div class="project-links">
+                  <a href="https://github.com/HimaCharanChowdary/dark-pattern-detection_extension" target="_blank" rel="noopener" aria-label="View on GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3>Dark Pattern Detection</h3>
+              <p class="project-desc">Multimodal AI system fusing BERT-NLP and ResNet-vision to detect deceptive e-commerce UI patterns via a Chrome Extension.</p>
+              <div class="project-metrics">
+                <div class="metric"><span class="metric-val">94%</span><span class="metric-label">Accuracy</span></div>
+                <div class="metric"><span class="metric-val">7</span><span class="metric-label">Pattern Categories</span></div>
+                <div class="metric"><span class="metric-val">&lt;1s</span><span class="metric-label">Inference Time</span></div>
+              </div>
+              <div class="project-stack">
+                <span class="stack-tag">BERT</span>
+                <span class="stack-tag">ResNet</span>
+                <span class="stack-tag">FastAPI</span>
+                <span class="stack-tag">Flask</span>
+                <span class="stack-tag">Chrome Extension</span>
+                <span class="stack-tag">Cross-Modal Attention</span>
+              </div>
+            </div>
+
+            <div class="project-card glass-card reveal-child">
+              <div class="project-header">
+                <div class="project-icon-wrap">📡</div>
+                <div class="project-links">
+                  <a href="https://github.com/HimaCharanChowdary" target="_blank" rel="noopener" aria-label="View on GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3>WatchOut — Wi-Fi Attack Detection</h3>
+              <p class="project-desc">Wearable Edge AI device using ESP8266 for real-time 802.11 frame analysis and Wi-Fi threat detection on OLED display.</p>
+              <div class="project-metrics">
+                <div class="metric"><span class="metric-val">90%</span><span class="metric-label">Detection Accuracy</span></div>
+                <div class="metric"><span class="metric-val">AWID3</span><span class="metric-label">Dataset</span></div>
+                <div class="metric"><span class="metric-val">Real-time</span><span class="metric-label">Alerts</span></div>
+              </div>
+              <div class="project-stack">
+                <span class="stack-tag">ESP8266</span>
+                <span class="stack-tag">Edge AI</span>
+                <span class="stack-tag">Random Forest</span>
+                <span class="stack-tag">IoT</span>
+                <span class="stack-tag">Network Security</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== EDUCATION ===== -->
+      <section id="education" class="section reveal">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-tag">05 / Education</p>
+            <h2 class="section-title">Academic Journey</h2>
+          </div>
+          <div class="edu-timeline">
+            <div class="edu-card glass-card reveal-child">
+              <div class="edu-year-badge">2022 – 2026</div>
+              <div class="edu-content">
+                <h3>B.Tech — Computer Science (AI & Robotics)</h3>
+                <h4>Vellore Institute of Technology, Chennai</h4>
+                <p class="edu-grade">CGPA: <strong>7.57 / 10</strong></p>
+              </div>
+            </div>
+            <div class="edu-card glass-card reveal-child">
+              <div class="edu-year-badge">2020 – 2022</div>
+              <div class="edu-content">
+                <h3>Higher Secondary Education (MPC)</h3>
+                <h4>Aditya Junior College</h4>
+                <p class="edu-grade">Score: <strong>84%</strong></p>
+              </div>
+            </div>
+            <div class="edu-card glass-card reveal-child">
+              <div class="edu-year-badge">2019 – 2020</div>
+              <div class="edu-content">
+                <h3>Secondary School Education</h3>
+                <h4>Bhashyam High School</h4>
+                <p class="edu-grade">Score: <strong>87%</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CERTIFICATIONS ===== -->
+      <section id="certifications" class="section reveal">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-tag">06 / Certifications</p>
+            <h2 class="section-title">Certified Expertise</h2>
+          </div>
+          <div class="cert-grid">
+            <div class="cert-card glass-card reveal-child">
+              <div class="cert-logo oracle-logo">Oracle</div>
+              <div class="cert-body">
+                <h3>Oracle Certified Generative AI Professional</h3>
+                <p class="cert-issuer">Oracle Corporation</p>
+                <span class="cert-badge">Verified ✓</span>
+              </div>
+            </div>
+            <div class="cert-card glass-card reveal-child">
+              <div class="cert-logo azure-logo">Azure</div>
+              <div class="cert-body">
+                <h3>Microsoft Azure AI Fundamentals</h3>
+                <p class="cert-issuer">Microsoft · AI-900</p>
+                <span class="cert-badge">Verified ✓</span>
+              </div>
+            </div>
+            <div class="cert-card glass-card reveal-child">
+              <div class="cert-logo sf-logo">SF</div>
+              <div class="cert-body">
+                <h3>Salesforce Certified Platform Administrator</h3>
+                <p class="cert-issuer">Salesforce</p>
+                <a href="https://www.salesforce.com/trailblazer" target="_blank" rel="noopener" class="cert-badge cert-badge-link">View TrailHead ↗</a>
+              </div>
+            </div>
+            <!-- Add more here easily -->
+          </div>
+
+          <!-- Leadership -->
+          <div class="leadership-card glass-card reveal-child">
+            <div class="leadership-icon">👥</div>
+            <div class="leadership-content">
+              <h3>Vice-President & Photography Lead</h3>
+              <h4>AVR Club (AR/VR) · VIT Chennai · Team of 90+</h4>
+              <p>Feb 2023 – Jan 2026 | Led initiatives in augmented & virtual reality, managed event photography, coordinated a 90-member team through workshops and technical events.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="footer-name">
+          <span class="logo-bracket">&lt;</span>JHCC<span class="logo-bracket">/&gt;</span>
+        </p>
+        <p class="footer-copy">© 2026 Jasthi Hima Charan Chowdary · Built with ❤️ and Vanilla JS</p>
+        <div class="footer-links">
+          <a href="https://github.com/HimaCharanChowdary" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/hima-charan-chowdary" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://leetcode.com/himacharancc" target="_blank" rel="noopener">LeetCode</a>
+          <a href="mailto:himacharan.cc@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
