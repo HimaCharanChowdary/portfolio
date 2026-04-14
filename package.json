@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://HimaCharanChowdary.github.io/portfolio",
+  "homepage": "https://himacharan.info",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
